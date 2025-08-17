@@ -3,22 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
 
-    <div class="contenido">
-        <h1>JavaScript Moderno</h1>
-        <a href="http://www.codigoconjuan.com" target="_blank">codigoconjuan.com</a>
-        <p>Local Storage</p>
-        <p class="hashtag">#JSModernoConJuan</p>
-    </div>
+    <div id="contenido">
+        <div class="container">
 
-    <script src="js/01-app.js"></script> 
-    <script src="js/02-app.js"></script>
-    <script src="js/03-app.js"></script>
-    
+            <h1>Local Storage</h1>
+            <div class="row">
+                <div class="six columns">
+                    <label for="tweet">Tweet:</label>
+                    <form  id="formulario">
+                            <label for="tweet"></label>
+                            <textarea id="tweet" class="u-full-width"></textarea>
+                            <input type="submit" class="button u-full-width button-primary" value="Agregar">
+                    </form>
+                </div>
+                <div class="six columns">
+                    <h2>Mis Tweets</h2>
+                    <div id="lista-tweets"></div>
+                </div>
+            </div>
+
+        </div>
+    </div> <!--#contenido-->
+
+    <script src="js/app.js"></script>
 </body>
 </html>
